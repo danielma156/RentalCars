@@ -1,0 +1,31 @@
+1. Ford Focus - CDMR - Compact - 5 doors - Manual - Petrol - AC
+2. Ford Galaxy - FVAR - Full size - Passenger Van - Automatic - Petrol - AC
+3. VW Passat Estate - IWMR - Intermediate - Estate - Manual - Petrol - AC
+4. Kia Ceed Estate - CWMR - Compact - Estate - Manual - Petrol - AC
+5. VW Jetta - IDAR - Intermediate - 5 doors - Automatic - Petrol - AC
+6. Nissan Juke - CCAR - Compact - 4 doors - Automatic - Petrol - AC
+7. Ford Mondeo - SDMR - Standard - 5 doors - Manual - Petrol - AC
+8. Skoda Octavia - IDMR - Intermediate - 5 doors - Manual - Petrol - AC
+9. Vauxhall Corsa - ECMR - Economy - 4 doors - Manual - Petrol - AC
+10. Kia Picanto - MBMN - Mini - 2 doors - Manual - Petrol - no AC
+11. ChevroletSpark - ECMR - Economy - 4 doors - Manual - Petrol - AC
+12. Audi A1 - CCMR - Compact - 4 doors - Manual - Petrol - AC
+13. Citroen C4 - CDMR - Compact - 5 doors - Manual - Petrol - AC
+14. VW Golf Estate - CWMR - Compact - Estate - Manual - Petrol - AC
+15. Chevrolet Cruze - IDMR - Intermediate - 5 doors - Manual - Petrol - AC
+16. Skoda Fabia - CDAR - Compact - 5 doors - Automatic - Petrol - AC
+17. VW Golf - CXMR - Compact - NULL - Manual - Petrol - AC
+18. Vauxhall Zafira - IVMR - Intermediate - Passenger Van - Manual - Petrol - AC
+19. VW Sharan - FVMR - Full size - Passenger Van - Manual - Petrol - AC
+20. Skoda Fabia - CDAR - Compact - 5 doors - Automatic - Petrol - AC
+21. VW Golf - CXMR - Compact - NULL - Manual - Petrol - AC
+22. Vauxhall Zafira - IVMR - Intermediate - Passenger Van - Manual - Petrol - AC
+23. VW Sharan - FVMR - Full size - Passenger Van - Manual - Petrol - AC
+24. VW Jetta - IDAR - Intermediate - 5 doors - Automatic - Petrol - AC
+25. Nissan Juke - CCAR - Compact - 4 doors - Automatic - Petrol - AC
+26. Ford Mondeo - SDMR - Standard - 5 doors - Manual - Petrol - AC
+27. Ford Focus - CDMR - Compact - 5 doors - Manual - Petrol - AC
+28. VW Golf - CXMR - Compact - NULL - Manual - Petrol - AC
+29. Ford Mondeo - SDMR - Standard - 5 doors - Manual - Petrol - AC
+30. Skoda Fabia - CDAR - Compact - 5 doors - Automatic - Petrol - AC
+31. Kia Ceed Estate - CWMR - Compact - Estate - Manual - Petrol - AC

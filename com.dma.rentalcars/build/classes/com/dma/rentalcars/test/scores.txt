@@ -1,0 +1,31 @@
+1. Nissan Juke - 7.0 - 8.9 - 15.9
+2. VW Jetta - 7.0 - 8.9 - 15.9
+3. Ford Galaxy - 7.0 - 8.9 - 15.9
+4. Skoda Fabia - 7.0 - 8.2 - 15.2
+5. Nissan Juke - 7.0 - 8.0 - 15.0
+6. VW Jetta - 7.0 - 8.0 - 15.0
+7. Skoda Fabia - 7.0 - 8.0 - 15.0
+8. Skoda Fabia - 7.0 - 7.8 - 14.8
+9. Vauxhall Corsa - 3.0 - 8.9 - 11.9
+10. Skoda Octavia - 3.0 - 8.9 - 11.9
+11. Ford Mondeo - 3.0 - 8.9 - 11.9
+12. Kia Ceed Estate - 3.0 - 8.9 - 11.9
+13. VW Passat Estate - 3.0 - 8.9 - 11.9
+14. Ford Focus - 3.0 - 8.9 - 11.9
+15. VW Sharan - 3.0 - 8.2 - 11.2
+16. Vauxhall Zafira - 3.0 - 8.2 - 11.2
+17. VW Golf - 3.0 - 8.2 - 11.2
+18. Chevrolet Cruze - 3.0 - 8.2 - 11.2
+19. VW Golf Estate - 3.0 - 8.2 - 11.2
+20. Citroen C4 - 3.0 - 8.2 - 11.2
+21. Audi A1 - 3.0 - 8.2 - 11.2
+22. ChevroletSpark - 3.0 - 8.2 - 11.2
+23. Ford Mondeo - 3.0 - 8.0 - 11.0
+24. VW Sharan - 3.0 - 8.0 - 11.0
+25. Vauxhall Zafira - 3.0 - 8.0 - 11.0
+26. VW Golf - 3.0 - 8.0 - 11.0
+27. Kia Ceed Estate - 3.0 - 7.8 - 10.8
+28. Ford Mondeo - 3.0 - 7.8 - 10.8
+29. VW Golf - 3.0 - 7.8 - 10.8
+30. Ford Focus - 3.0 - 7.8 - 10.8
+31. Kia Picanto - 1.0 - 8.9 - 9.9

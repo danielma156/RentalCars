@@ -26,9 +26,10 @@ import org.json.simple.parser.JSONParser;
 public class VehicleOperations {
 
 	public static List<Vehicle> vehicles;
+	public static final String defaultJSON = "vehicles.json";
 
 	public static void main(String[] args) throws Exception {
-		readJSON();
+		readJSON(defaultJSON);
 
 		System.out.println("==> List of Cars in ascending price order:");
 		System.out.println(displayVehiclesWithPrices());
@@ -41,11 +42,11 @@ public class VehicleOperations {
 	}
 
 	@SuppressWarnings("unchecked")
-	public static void readJSON() throws Exception {
+	public static void readJSON(String json) throws Exception {
 		Object obj = null;
 		try {
 			JSONParser parser = new JSONParser();
-			URL path = VehicleOperations.class.getResource("vehicles.json");
+			URL path = VehicleOperations.class.getResource(json);
 			obj = parser.parse(new FileReader(new File(path.getFile())));
 		}
 		catch (Exception e) {
@@ -67,7 +68,7 @@ public class VehicleOperations {
 	}
 
 	public static String displayVehiclesWithPrices() throws Exception {
-		readJSON();
+		readJSON(defaultJSON);
 		Collections.sort(vehicles);
 		int i = 1;
 		StringBuilder sb = new StringBuilder();
@@ -79,7 +80,7 @@ public class VehicleOperations {
 	}
 
 	public static String displayVehicleSpecification() throws Exception {
-		readJSON();
+		readJSON(defaultJSON);
 		int i = 1;
 		StringBuilder sb = new StringBuilder();
 		for (Vehicle vehicle : vehicles) {
@@ -90,7 +91,7 @@ public class VehicleOperations {
 	}
 
 	public static String displayRating() throws Exception {
-		readJSON();
+		readJSON(defaultJSON);
 		// iterate through cars and find highest rated supplier for each car type
 		HashMap<String, Vehicle> hashmap = new HashMap<String, Vehicle>();
 		for (Vehicle vehicle : vehicles) {
@@ -124,7 +125,7 @@ public class VehicleOperations {
 	}
 
 	public static String displayScores() throws Exception {
-		readJSON();
+		readJSON(defaultJSON);
 		for (Vehicle vehicle : vehicles) {
 			int vehicleScore = 0;
 			SIPP sipp = vehicle.getSipp();

@@ -69,7 +69,7 @@ public class Vehicle implements Comparable<Vehicle> {
 	
 	@Override
 	public String toString(){
-		return this.getName() + " - " + this.getPrice();
+		return this.getName() + " - " + String.format("%.2f", this.getPrice());
 	}
 
 	@Override

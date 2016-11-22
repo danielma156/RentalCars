@@ -1,0 +1,31 @@
+1. ChevroletSpark - 120.16
+2. Kia Picanto - 136.57
+3. Vauxhall Corsa - 139.93
+4. Citroen C4 - 146.7
+5. Ford Focus - 157.85
+6. Ford Focus - 157.85
+7. VW Golf - 188.97
+8. VW Golf - 209.97
+9. VW Golf - 209.97
+10. Skoda Fabia - 219.71
+11. Skoda Fabia - 219.71
+12. Chevrolet Cruze - 229.45
+13. Audi A1 - 234.76
+14. Skoda Octavia - 236.24
+15. VW Golf Estate - 239.56
+16. Skoda Fabia - 240.71
+17. Kia Ceed Estate - 311.03
+18. Kia Ceed Estate - 311.03
+19. Vauxhall Zafira - 319.63
+20. Vauxhall Zafira - 323.63
+21. Ford Mondeo - 339.31
+22. Nissan Juke - 356.28
+23. Ford Mondeo - 365.31
+24. Ford Mondeo - 365.31
+25. Nissan Juke - 463.56
+26. VW Passat Estate - 469.37
+27. VW Jetta - 508.96
+28. VW Jetta - 508.96
+29. Ford Galaxy - 706.89
+30. VW Sharan - 753.75
+31. VW Sharan - 789.75
