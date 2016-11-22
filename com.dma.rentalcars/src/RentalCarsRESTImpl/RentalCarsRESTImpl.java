@@ -1,8 +1,10 @@
 package RentalCarsRESTImpl;
 
-import javax.json.*;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import org.json.simple.JSONObject;
+
+import VehicleServices.VehicleOperations;
 
 @Path("/rc")
 public class RentalCarsRESTImpl {
@@ -16,7 +18,14 @@ public class RentalCarsRESTImpl {
 	@PUT
 	@Path("/load")
 	@Produces(MediaType.TEXT_PLAIN)
-	public static void loadJSON(JsonObject json) {
+	public void loadJSON(JSONObject json) {
 		
+	}
+	
+	@GET
+	@Path("/cars")
+	@Produces(MediaType.TEXT_PLAIN)
+	public String showCars() {
+		return VehicleOperations.displayVehiclesWithPrices(vehicles);
 	}
 }

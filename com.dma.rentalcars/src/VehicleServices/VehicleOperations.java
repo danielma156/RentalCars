@@ -4,7 +4,6 @@ import java.io.FileReader;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-import java.util.TreeMap;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -30,14 +29,14 @@ public class VehicleOperations {
     // read the JSON data
     List<Vehicle> vehicles = readJSON(obj);
     
-    System.out.println(" List of Cars in ascending price order:");
-    displayVehiclesWithPrices(vehicles);
-    System.out.println("\n Car Specifications:");
-    displayVehicleSpecification(vehicles);
-    System.out.println("\n Highest Rated Supplier per Car Type:");
-    displayRating(vehicles);
-    System.out.println("\n Vehicle Scores:");
-    displayScores(vehicles);
+    System.out.println("==> List of Cars in ascending price order:");
+    System.out.println(displayVehiclesWithPrices(vehicles));
+    System.out.println("==> Car Specifications:");
+    System.out.println(displayVehicleSpecification(vehicles));
+    System.out.println("==> Highest Rated Supplier per Car Type:");
+    System.out.println(displayRating(vehicles));
+    System.out.println("==> Vehicle Scores:");
+    System.out.println(displayScores(vehicles));
   }
   
   public static List<Vehicle> readJSON(Object obj) {
@@ -57,66 +56,57 @@ public class VehicleOperations {
 	    return vehicles;
   }
   
-  public static void displayVehiclesWithPrices(List<Vehicle> vehicles) {
+  public static String displayVehiclesWithPrices(List<Vehicle> vehicles) {
 	  Collections.sort(vehicles);
 	  int i = 1;
+	  StringBuilder sb = new StringBuilder();
 	  for (Vehicle vehicle : vehicles) {
-		  System.out.println(i + ". " + vehicle.toString());
+		  sb.append(i + ". " + vehicle.toString() +"\n");
 		  i++;
 	  }
+	  return sb.toString();
   }
   
-  public static void displayVehicleSpecification(List<Vehicle> vehicles) {
+  public static String displayVehicleSpecification(List<Vehicle> vehicles) {
 	  int i = 1;
+	  StringBuilder sb = new StringBuilder();
 	  for (Vehicle vehicle : vehicles) {
-		  System.out.println(i + ". " + vehicle.getName() + " - " + vehicle.getSipp().toString());
+		  sb.append(i + ". " + vehicle.getName() + " - " + vehicle.getSipp().toString()+"\n");
 		  i++;
 	  }
+	  return sb.toString();
   }
   
-  public static void displayRating(List<Vehicle> vehicles) {
+  public static String displayRating(List<Vehicle> vehicles) {
 	  // iterate through cars and find highest rated supplier for each car type
-	  Comparator<Vehicle> c = new Comparator<Vehicle>() {
-		  public int compare(Vehicle one, Vehicle two) {
-			  return (one.getSupplier().getRating()).compareTo(two.getSupplier().getRating());
-		  }
-	  };
-	  TreeMap<String, Vehicle> hashmap = new TreeMap<String, Vehicle>();
+	  HashMap<String, Vehicle> hashmap = new HashMap<String, Vehicle>();
 	  for (Vehicle vehicle : vehicles) {
 		  String carType = vehicle.getSipp().getCarType();
 		  Supplier supplier = vehicle.getSupplier();
 		  
 		  if (hashmap.get(carType) == null || supplier.compareTo(hashmap.get(carType).getSupplier()) > 0) 
-		  	hashmap.put(carType, vehicle);	  
+		  	hashmap.put(carType, vehicle);
 	  }
-	  
-	  TreeMap<Vehicle, String> tm = new TreeMap<Vehicle, String>(new Comparator<Vehicle>() {
-		public int compare(Vehicle one, Vehicle two) {
-			  return (one.getSupplier().getRating()).compareTo(two.getSupplier().getRating());
-		  }
-	  });
+	  	
+	  List<String> strings = new ArrayList<String>();
 	  
 	  // print results
 	  Set<String> set = hashmap.keySet();
 	  Iterator<String> iterator = set.iterator();
 	  while (iterator.hasNext()) {
 		  String str = iterator.next();
-		  tm.put(hashmap.get(str), hashmap.get(str).getName() + " - " 
-				  + str + " - " + hashmap.get(str).getSupplier());
-//		  System.out.println(i + ". " + hashmap.get(str).getName() + " - " 
-//				  + str + " - " + hashmap.get(str).getSupplier());
+		  strings.add(hashmap.get(str).getSupplier().getRating() + 
+				  hashmap.get(str).getName() + " - " + str + " - " + hashmap.get(str).getSupplier());
 	  }
-	  
-	  int i = 1;
-	  Set<Vehicle> set2 = tm.descendingKeySet();
-	  Iterator<Vehicle> iterator2 = set2.iterator();
-	  while (iterator2.hasNext()) {
-		  System.out.println(i + ". " + tm.get(iterator2.next()));
-		  i++;
-	  }
+	  Collections.sort(strings);
+	  Collections.reverse(strings);
+	  StringBuilder sb = new StringBuilder();
+	  for (String s : strings)
+		  sb.append(s.substring(3)+"\n");
+	  return sb.toString();
   }
   
-  public static void displayScores(List<Vehicle> vehicles) throws Exception {
+  public static String displayScores(List<Vehicle> vehicles) throws Exception {
 	  for (Vehicle vehicle : vehicles) {
 		  int vehicleScore = 0;
 		  SIPP sipp = vehicle.getSipp();
@@ -142,11 +132,13 @@ public class VehicleOperations {
 	  Collections.reverse(vehicles);
 	  
 	  int i = 1;
+	  StringBuilder sb = new StringBuilder();
 	  for (Vehicle vehicle : vehicles) {
-		  System.out.println(i + ". " + vehicle.getName() + " - " + vehicle.getVehicleScore() 
-				  + " - " + vehicle.getSupplier().getRating() + " - " + vehicle.getTotalScore());
+		  sb.append(i + ". " + vehicle.getName() + " - " + vehicle.getVehicleScore() 
+				  + " - " + vehicle.getSupplier().getRating() + " - " + vehicle.getTotalScore()+"\n");
 		  i++;
 	  }
+	  return sb.toString();
   }
 
 }
